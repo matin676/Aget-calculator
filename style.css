@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+}
+
+.section {
+  max-width: fit-content;
+  max-height: fit-content;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px 20px 130px 20px;
+}
+
+.content {
+  display: flex;
+  margin: 2rem 7rem 1rem 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.grey {
+  color: hsla(0, 1%, 44%, 0.836);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  width: 6.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  opacity: 0.7;
+  padding: 1rem;
+  border: 0.5px solid hsla(0, 1%, 44%, 0.348);
+  border-radius: 9px;
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  caret-color: hsla(259, 100%, 65%, 0.497);
+  border: 1.5px solid hsl(259, 100%, 65%);
+}
+
+input.active{
+  border: 1.5px solid red;
+}
+
+.warning{
+  color: red;
+  font-size: 10px;
+}
+
+.two-div {
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.hr-class::before {
+  position: relative;
+  content: "";
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.097);
+  left: 2rem;
+  width: 25rem;
+}
+
+.calcButton {
+  position: relative;
+  background-color: hsl(259, 100%, 65%);
+  padding: 1rem;
+  border-radius: 50%;
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+  left: 2rem;
+  bottom: 2rem;
+}
+
+.calcButton img {
+  width: 100%;
+}
+
+.calcButton:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.result-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+  margin-right: 6rem;
+  font-weight: 800;
+  font-size: 5rem;
+  bottom: 3.5rem;
+  line-height: 1;
+}
+
+.change {
+  color: hsl(259, 100%, 65%);
+}
+
+.attribution {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 560px) {
+  input {
+    width: 5rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .two-div{
+    margin: 2rem 0;
+    margin-top: 1rem;
+  }
+  .hr-class::before {
+    width: 20rem;
+  }
+  .calcButton {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    left: -10rem;
+    padding: 0.5rem;
+    bottom: 1.5rem;
+  }
+  .result-content {
+    margin: 0 2rem;
+    margin-right: 4rem;
+    font-size: 2.5rem;
+    bottom: 3.5rem;
+  }
+}

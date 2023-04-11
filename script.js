@@ -20,7 +20,7 @@ btn.addEventListener("click", function () {
   const currentMonth = currentDate.getMonth() + 1;
   const currentDay = currentDate.getDate();
 
-  if (day === "" || month === "" || year === "") {
+  if (bday.value === "" || bmonth.value === "" || byear.value === "") {
     for (let i = 0; i < warning.length; i++) {
       warning[i].innerHTML = "This field is required";
     }

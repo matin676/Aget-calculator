@@ -70,11 +70,11 @@ input:focus {
   border: 1.5px solid hsl(259, 100%, 65%);
 }
 
-input.active{
+input.active {
   border: 1.5px solid red;
 }
 
-.warning{
+.warning {
   color: red;
   font-size: 10px;
   font-style: italic;
@@ -132,26 +132,13 @@ input.active{
   color: hsl(259, 100%, 65%);
 }
 
-.attribution {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 @media (max-width: 560px) {
   input {
     width: 5rem;
     height: 3rem;
     font-size: 1rem;
   }
-  .two-div{
+  .two-div {
     margin: 2rem 0;
     margin-top: 1rem;
   }
